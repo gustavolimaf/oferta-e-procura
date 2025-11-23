@@ -1,4 +1,4 @@
-# Trabalho 2 - Sistema Operacional
+# Trabalho 2 - Sistemas Operacionais
 ## Problema Produtor-Consumidor
 
 ### Integrantes
