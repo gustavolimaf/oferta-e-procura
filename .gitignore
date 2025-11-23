@@ -1,0 +1,11 @@
+# Arquivos compilados
+*.class
+bin/
+out/
+
+# Arquivos do IntelliJ IDEA
+.idea/
+*.iml
+
+# Logs
+*.log
