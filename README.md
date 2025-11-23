@@ -33,19 +33,33 @@ Implementação do problema clássico produtor-consumidor utilizando:
 
 ### Estrutura do Projeto
 ```
-ProjetoSO/
+oferta_e_procura/
 ├── src/
 │   ├── Main.java          # Classe principal
 │   ├── Buffer.java        # Buffer compartilhado (região crítica)
 │   ├── Produtor.java      # Thread produtora
 │   └── Consumidor.java    # Thread consumidora
+├── bin/                   # Arquivos compilados (.class)
 ├── output/
 │   └── log.txt           # Log de execução (gerado)
+├── .gitignore            # Arquivos ignorados pelo Git
 └── README.md             # Este arquivo
+```
+
+### Como Compilar e Executar
+```powershell
+# Compilar
+& "C:\Program Files\Java\jdk-21\bin\javac.exe" -d bin src\*.java
+
+# Executar
+& "C:\Program Files\Java\jdk-21\bin\java.exe" -cp bin Main
+
+# Ou tudo de uma vez
+& "C:\Program Files\Java\jdk-21\bin\javac.exe" -d bin src\*.java; & "C:\Program Files\Java\jdk-21\bin\java.exe" -cp bin Main
 ```
 
 ### Formato do Log
 ```
-Produtor-1 - Inserido item 1 no buffer – espaços disponíveis: 6
-Consumidor-1 - Consumido item 1 do buffer – espaços disponíveis: 7
+Produtor - Inserido um item no buffer – espaços disponíveis: 6
+Consumidor - Consumido um item no buffer – espaços disponíveis: 7
 ```
