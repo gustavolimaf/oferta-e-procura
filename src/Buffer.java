@@ -20,7 +20,7 @@ import java.util.concurrent.locks.ReentrantLock;
 public class Buffer {
     private static final int CAPACIDADE = 7; // Requisito: Buffer de 7 posições
     
-    // Implementação clássica de Buffer Circular (comum em Gerência de Memória)
+    // Implementação de Buffer Circular
     private int[] buffer = new int[CAPACIDADE];
     private int contadorItens = 0; 
     private int ponteiroProducao = 0; 
